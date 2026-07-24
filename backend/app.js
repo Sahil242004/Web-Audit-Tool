@@ -9,7 +9,14 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 8080;
 
-app.use(cors());
+// Allow requests from any origin with JSON headers
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type"],
+  }),
+);
 app.use(express.json());
 
 // Helper function to extract audit metrics from HTML

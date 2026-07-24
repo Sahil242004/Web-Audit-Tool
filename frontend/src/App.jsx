@@ -5,8 +5,9 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [report, setReport] = useState(null);
   const [error, setError] = useState(null);
-  const API_BASE_URL =
-    import.meta.env.VITE_API_BASE_URL || "http://localhost:8080";
+  const API_BASE_URL = (
+    import.meta.env.VITE_API_BASE_URL || "http://localhost:8080"
+  ).replace(/\/$/, "");
 
   const handleAudit = async (e) => {
     e.preventDefault();
