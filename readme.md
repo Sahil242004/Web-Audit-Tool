@@ -67,6 +67,17 @@ npm run dev
 }
 ```
 
+**Few URL's you can try out:**
+
+- `https://dummyjson.com/products/z`: -> return application/json data
+- `https://raw.githubusercontent.com/octocat/Spoon-Knife/main/README.md`: -> return text/plain data"
+- `https://picsum.photos/200/300` -> return image/jpeg data"
+- `https://news.ycombinator.com` -> return html response"
+- `https://github.com` -> returns rich html with rich data"
+- `https://mock.httpstatus.io/200?delay=12000` -> gives response after 10 seconds, useful for testing timeout handling"
+
+---
+
 **Error Responses:**
 
 - `400 Bad Request`: Missing/invalid URL or non-HTML response content type.

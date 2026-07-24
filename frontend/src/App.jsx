@@ -53,7 +53,6 @@ function App() {
           </p>
         </header>
 
-        {/* Input Form */}
         <form
           onSubmit={handleAudit}
           className="flex flex-col sm:flex-row gap-3 mb-8"
@@ -76,7 +75,6 @@ function App() {
           </button>
         </form>
 
-        {/* Error Alert */}
         {error && (
           <div className="bg-red-50 border border-red-200 text-red-700 p-4 rounded-lg mb-8">
             <h3 className="font-semibold text-red-800 flex items-center gap-2">
@@ -86,7 +84,6 @@ function App() {
           </div>
         )}
 
-        {/* Audit Results Report */}
         {report && (
           <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm mb-8 space-y-6">
             <div className="border-b border-slate-100 pb-4">
@@ -106,7 +103,6 @@ function App() {
               </div>
             </div>
 
-            {/* Metrics Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
               <div className="bg-slate-50 border border-slate-200 p-3 rounded-lg text-center">
                 <span className="block text-xs font-medium text-slate-500 uppercase tracking-wider mb-1">
@@ -166,7 +162,6 @@ function App() {
               </div>
             </div>
 
-            {/* Details Section */}
             <div className="space-y-4 pt-2">
               <div>
                 <span className="block text-sm font-semibold text-slate-700">
@@ -190,7 +185,6 @@ function App() {
         )}
       </div>
 
-      {/* Mandatory Credit Line Footer */}
       <footer className="text-center py-6 border-t border-slate-200 text-xs sm:text-sm text-slate-500">
         <p>
           Built for{" "}
